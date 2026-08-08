@@ -1,0 +1,138 @@
+/* Rechtliche Unterseiten — Studio Name Atelier */
+
+.page.legal-page-body {
+  background: var(--bl-bg, #fff) !important;
+}
+
+.page.legal-page-body #site-header,
+.page.legal-page-body #site-footer.dynamic-footer {
+  display: none !important;
+}
+
+.page.legal-page-body main.legal-page {
+  padding-top: calc(96px + clamp(2rem, 5vw, 3.5rem));
+  padding-bottom: clamp(3rem, 8vw, 5rem);
+  min-height: 50vh;
+}
+
+.legal-page__inner {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding-left: clamp(1.25rem, 4vw, var(--bl-section-x, 3rem));
+  padding-right: clamp(1.25rem, 4vw, var(--bl-section-x, 3rem));
+}
+
+.legal-page__header {
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--bl-border, #ebebeb);
+}
+
+.legal-page__header h1 {
+  font-family: var(--bl-font-serif, "Cormorant Garamond", Georgia, serif) !important;
+  font-size: clamp(2.25rem, 6vw, 3.25rem) !important;
+  font-weight: 300 !important;
+  line-height: 1.15 !important;
+  color: var(--bl-text, #1a1a1a) !important;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.5rem !important;
+}
+
+.legal-page__lead {
+  font-family: var(--bl-font-sans, "Montserrat", system-ui, sans-serif) !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bl-accent, #b8966a) !important;
+  margin: 0 !important;
+}
+
+.legal-section {
+  margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.legal-section h2 {
+  font-family: var(--bl-font-serif, "Cormorant Garamond", Georgia, serif) !important;
+  font-size: clamp(1.35rem, 3.5vw, 1.75rem) !important;
+  font-weight: 400 !important;
+  color: var(--bl-text, #1a1a1a) !important;
+  margin: 0 0 1rem !important;
+  line-height: 1.3 !important;
+}
+
+.legal-section p,
+.legal-section address {
+  font-family: var(--bl-font-sans, "Montserrat", system-ui, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 300 !important;
+  line-height: 1.85 !important;
+  color: var(--bl-body, #7a7a7a) !important;
+  margin: 0 0 1rem !important;
+}
+
+.legal-section p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.legal-section address {
+  font-style: normal;
+}
+
+.legal-section a {
+  color: var(--bl-text, #1a1a1a) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--bl-accent-border, rgba(184, 150, 106, 0.35));
+  text-underline-offset: 3px;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.legal-section a:hover {
+  color: var(--bl-accent, #b8966a) !important;
+  text-decoration-color: var(--bl-accent, #b8966a);
+}
+
+.legal-contact {
+  margin-top: 0.5rem;
+}
+
+.legal-section ul {
+  font-family: var(--bl-font-sans, "Montserrat", system-ui, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 300 !important;
+  line-height: 1.85 !important;
+  color: var(--bl-body, #7a7a7a) !important;
+  margin: 0 0 1rem !important;
+  padding-left: 1.25rem !important;
+}
+
+.legal-section li {
+  margin-bottom: 0.35rem !important;
+}
+
+.legal-section li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.legal-section h3 {
+  font-family: var(--bl-font-sans, "Montserrat", system-ui, sans-serif) !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bl-text, #1a1a1a) !important;
+  margin: 1.25rem 0 0.75rem !important;
+  line-height: 1.4 !important;
+}
+
+@media (max-width: 1024px) {
+  .page.legal-page-body main.legal-page {
+    padding-top: calc(96px + 3rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .page.legal-page-body main.legal-page {
+    padding-top: calc(96px + 3.5rem);
+  }
+}
